@@ -93,3 +93,7 @@ export type ReviewStudentStatusRequest = {
 export type GetTeachers = {
   teachers: NameIdType[];
 };
+
+export type DeleteStudentRequest = {
+  id: number;
+};
