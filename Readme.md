@@ -1,3 +1,8 @@
+# LOOM
+[https://www.loom.com/share/be78c9eb677644c4b7eb35342a82d135](Notice)
+[https://www.loom.com/share/d9902357938a40a8a999f2fb132132bd](Students)
+
+
 # Student Management System - Developer Skill Test
 
 A comprehensive full-stack web application for managing school operations including students, staff, classes, notices, and leave management. This project serves as a skill assessment platform for **Frontend**, **Backend**, and **Blockchain** developers.
