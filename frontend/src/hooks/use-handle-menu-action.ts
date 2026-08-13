@@ -6,7 +6,7 @@ import {
 } from '@/domains/auth/api';
 import { useHandleNoticeStatusMutation } from '@/domains/notice/api';
 import { useHandleStaffStatusMutation } from '@/domains/staff/api';
-import { useReviewStudentStatusMutation } from '@/domains/student/api';
+import { useDeleteStudentMutation, useReviewStudentStatusMutation } from '@/domains/student/api';
 
 export const useHandleMenuAction = () => {
   const [handleStaffStatus] = useHandleStaffStatusMutation();
@@ -15,6 +15,7 @@ export const useHandleMenuAction = () => {
   const [resendPwdSetupLink] = useResendPwdSetupLinkMutation();
   const [resetPwd] = useResetPwdMutation();
   const [handleNoticeStatus] = useHandleNoticeStatusMutation();
+  const [handleDeleteStudent] = useDeleteStudentMutation();
 
   const handleAction = async (menuItemValue: string, selectedId: number) => {
     const actionHandlers: {
@@ -24,6 +25,7 @@ export const useHandleMenuAction = () => {
       DISABLE_STAFF_STATUS: () => handleStaffStatus({ id: selectedId, status: false }).unwrap(),
       ENABLE_STUDENT_STATUS: () => handleStudentStatus({ id: selectedId, status: true }).unwrap(),
       DISABLE_STUDENT_STATUS: () => handleStudentStatus({ id: selectedId, status: false }).unwrap(),
+      DELETE_STUDENT: () => handleDeleteStudent({ id: selectedId }).unwrap(), 
       RESEND_VERIFICATION_EMAIL_TO_USER: () =>
         resendVerificationEmail({ userId: selectedId }).unwrap(),
       RESEND_PWD_LINK_EMAIL_TO_USER: () => resendPwdSetupLink({ userId: selectedId }).unwrap(),
