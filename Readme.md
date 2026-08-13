@@ -1,7 +1,7 @@
 # LOOM
-[Notice Video](https://www.loom.com/share/be78c9eb677644c4b7eb35342a82d135)
+[Students Video](https://www.loom.com/share/be78c9eb677644c4b7eb35342a82d135)
 
-[Students Video](https://www.loom.com/share/d9902357938a40a8a999f2fb132132bd)
+[Notice Video](https://www.loom.com/share/d9902357938a40a8a999f2fb132132bd)
 
 
 
